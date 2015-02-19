@@ -6,7 +6,7 @@ class Complement
 
 
   def self.of_dna(dna_string)
-    complement = String.new
+    complement = ''
 
     dna_string.length.times do |i|
       complement << COMPLIMENTS[dna_string[i]]
@@ -16,7 +16,7 @@ class Complement
   end
 
   def self.of_rna(rna_string)
-    complement = String.new
+    complement = ''
 
     rna_string.length.times do |i|
       complement << COMPLIMENTS.key(rna_string[i])
